@@ -3,6 +3,7 @@
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\PedidoResource\Pages;
+use App\Filament\Resources\PedidoResource\Pages\Cocina;
 use App\Filament\Resources\PedidoResource\RelationManagers;
 use App\Models\Pedido;
 use Filament\Forms;
@@ -238,6 +239,7 @@ class PedidoResource extends Resource
             'index' => Pages\ListPedidos::route('/'),
             'create' => Pages\CreatePedido::route('/create'),
             'edit' => Pages\EditPedido::route('/{record}/edit'),
+            'cocina' => Cocina::route('/cocina'),
         ];
     }
 
